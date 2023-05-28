@@ -22,8 +22,7 @@ Application en C encodant et décodant un message avec César
   
 ## Objectif
 
-  Dans le but de développer une application de protection de textes confidentiels, notre équipe de développeurs a conçu un outil permettant le chiffrement de messages. Le schéma ci-dessous montre l’enchaînement des traitements à appliquer afin de chiffrer un message en clair et afficher le résultat. Le schéma montre également la procédure inverse : déchiffrer un message pour l’afficher en clair
-
+  Afin de créer une application de protection de message confidentiels, nous avons créé un outil permettant de chiffrer des messages. L'image ci-dessous montre les différentes étapes nécessaires pour chiffrer ou déchiffrer un message et afficher le résultat.
 <img src="https://media.discordapp.net/attachments/950656324377640960/963814296414990366/unknown.png">
 
 <div id='Démarrage'/>
