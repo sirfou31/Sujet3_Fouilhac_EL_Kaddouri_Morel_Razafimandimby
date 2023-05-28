@@ -1,7 +1,7 @@
 <img width="200" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="IUT" src="https://cdn.discordapp.com/attachments/739553949199106158/937150810431823912/logoIUT.jpg"> 
 
 
-Application en C encodant et décodant un message avec César
+Application codée en C permetant de codée et de décoder un message
 ---
 <div id="Som"/>
   
@@ -9,8 +9,7 @@ Application en C encodant et décodant un message avec César
 
 * [Objectif](#Obj)
 * [Démarrage](#Démarrage)
-* [Conçu avec](#Concu)
-* [Documentation](#Docu)
+* [Documentation](#Documentation)
   * [Chiffrage](#Chiff)
   * [Affichage](#Aff)
   * [Verif](#Verif)
@@ -22,43 +21,37 @@ Application en C encodant et décodant un message avec César
   
 ## Objectif
 
-  Afin de créer une application de protection de message confidentiels, nous avons créé un outil permettant de chiffrer des messages. L'image ci-dessous montre les différentes étapes nécessaires pour chiffrer ou déchiffrer un message et afficher le résultat.
+  Afin de créer une application de protection de message confidentiels, nous avons créé un programme permettant de chiffrer des messages. L'image ci-dessous montre les différentes étapes nécessaires pour chiffrer ou déchiffrer un message et afficher le résultat.
 <img src="https://media.discordapp.net/attachments/950656324377640960/963814296414990366/unknown.png">
 
 <div id='Démarrage'/>
 
 ## Démarrage
 
-Pour lancer notre programme il suffit simplement de télécharger notre projet et dans un terminal taper : ``make all && ./main``.
+Pour lancer le programme il faut de télécharger le projet et dans un terminal Linux taper la commande : ``make all && ./main``.
 
 <div id='Concu'/>
 
-## Conçu avec
-
-* [VisualStudioCode](https://code.visualstudio.com/) - IDE
-* [WSL](https://atom.io/) - Linux sous windows (bureau distant)
-
-<div id='Docu'/>
+<div id='Documentation'/>
 
 <div id="Chiff"/>
 
 ### Chiffrage
 
 ```C
-/*  Entrée : chaine (chaine à chiffrer), cleChiffrage (clé utilisé pour le chiffrement)
-    Chiffre une chaine à l'aide de la méthode de César
-*/
+/* Chiffre une chaîne en utilisant la méthode de César.
+   Entrées:
+   - chaine: la chaîne à chiffrer
+   - cleChiffrage: la clé de chiffrement à utiliser */
 void chiffrage(char *chaine, int cleChiffrage);
 
 
-/*  Entrée : chaine (chiffrée), cleChiffragde (Clé pour déchiffrer le message)
-    Dechiffre un message grâce à une clé de chiffrage
-*/
+/* Déchiffre un message en utilisant une clé de chiffrement.
+   Entrées:
+   - chaine: le message chiffré
+   - cleChiffrage: la clé de chiffrement utilisée */
 void dechiffrage(char *chaine, int cleChiffrade);
 
-/*  Entrée : chaine (chaine à chiffrer), cleChiffrage (clé utilisée pour le chiffrement)
-    Chiffre une chaine à l'aide de la méthode de Vigénraire
-*/
 ```
 
 <div id="Aff"/>
@@ -66,16 +59,17 @@ void dechiffrage(char *chaine, int cleChiffrade);
 ### Affichage
 
 ```C
-/*  Entrée : chaine (chaine de caractère à afficher après décodage ou encodage), int (valeur permettant de choisir ce qu'on doit afficher)
-    Affiche le message décoder ou encoder par l'algorithme de césar
-*/
+/* Affiche le message décodé ou encodé par l'algorithme de César.
+   Entrées:
+   - chaine: la chaîne de caractères à afficher après décodage ou encodage
+   - i: valeur permettant de choisir ce qu'on doit afficher */
 void affichage (char chaine[],int i);
 
-/* Affiche graphiquement le message de choix de la technique de cryptage
+/* Affiche le message de choix de la technique de cryptage chois par l'utilisateur
 */
 void presentation();
 
-/* Affiche graphiquement le message de choix : encodage ou decodage
+/* Affiche le message pour que l'utilisateur choisi s'il souhaite encodée ou decodée le message
 */
 void choixCrypt();
 ```
@@ -86,12 +80,14 @@ void choixCrypt();
 
 ```C
 
-/*  Prend en entrée une chaine de caractère 
-    Renvoie TRUE si la chaine est en alphanumérique, FALSE sinon */
+/* Vérifie si une chaîne de caractères est alphanumérique.
+Elle prend en Entrée une chaine: la chaîne de caractères à vérifier
+et elle renvoie: TRUE si la chaîne est alphanumérique
+ou FALSE sinon */
 bool verifAlpha (char chaine []);
 
-/*  Prend en entrée une chaine de caractère
-    Converti les accents de la chaîne en chaine sans accent */
+/* Convertit les accents d'une chaîne de caractères en une chaîne sans accent.
+Pren en entrée une chaine: la chaîne de caractères à convertir puis renvoie: la chaîne convertie sans accents */
 char * conversionAccents (char * chaine []);
 ```
 
@@ -100,7 +96,7 @@ char * conversionAccents (char * chaine []);
 ### main
 
 ```C
-/* Contient uniquement le main appelant les différentes fonctions
+/* Programme principal contenant les  différentes fonnctions à appeler
 */
 void main();
 ```
@@ -113,5 +109,6 @@ L'équipe est constituée de :
   - [Amine EL KADDOURI]
   - [Damien MOREL]
   - [Hasina RAZAFIMANDIMBY]
- 
+
+Lien du GitHub:(https://github.com/sirfou31/Sujet3_Fouilhac_EL_Kaddouri_Morel_Razafimandimby
  Etudiants en informatique à l'IUT Paul Sabatier de Toulouse
