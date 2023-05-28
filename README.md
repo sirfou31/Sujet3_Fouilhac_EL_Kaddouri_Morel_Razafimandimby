@@ -40,16 +40,13 @@ Pour lancer le programme il faut de télécharger le projet et dans un terminal 
 
 ```C
 /* Chiffre une chaîne en utilisant la méthode de César.
-   Entrées:
-   - chaine: la chaîne à chiffrer
-   - cleChiffrage: la clé de chiffrement à utiliser */
+Prend en entrées: une chaine: la chaîne à chiffrer
+et une cleChiffrage: la clé de chiffrement à utiliser */
 void chiffrage(char *chaine, int cleChiffrage);
 
 
 /* Déchiffre un message en utilisant une clé de chiffrement.
-   Entrées:
-   - chaine: le message chiffré
-   - cleChiffrage: la clé de chiffrement utilisée */
+Prend en entrées: une chaine: le message chiffre une cleChiffrage: la clé de chiffrement utilisée */
 void dechiffrage(char *chaine, int cleChiffrade);
 
 ```
@@ -60,9 +57,7 @@ void dechiffrage(char *chaine, int cleChiffrade);
 
 ```C
 /* Affiche le message décodé ou encodé par l'algorithme de César.
-   Entrées:
-   - chaine: la chaîne de caractères à afficher après décodage ou encodage
-   - i: valeur permettant de choisir ce qu'on doit afficher */
+Prend en Entrées: une chaine: la chaîne de caractères à afficher après décodage ou encodage et i: valeur permettant de choisir ce qu'on doit afficher */
 void affichage (char chaine[],int i);
 
 /* Affiche le message de choix de la technique de cryptage chois par l'utilisateur
