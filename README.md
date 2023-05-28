@@ -1,4 +1,4 @@
-Application codée en C permetant de codée et de décoder un message
+Application codée en C permettant de coder et de décoder un message
 ---
 <div id="Som"/>
   
