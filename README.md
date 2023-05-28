@@ -102,5 +102,6 @@ L'équipe est constituée de :
   - [Damien MOREL]
   - [Hasina RAZAFIMANDIMBY]
 
-Lien du GitHub:(https://github.com/sirfou31/Sujet3_Fouilhac_EL_Kaddouri_Morel_Razafimandimby
- Etudiants en informatique à l'IUT Paul Sabatier de Toulouse
+Lien du GitHub:(https://github.com/sirfou31/Sujet3_Fouilhac_EL_Kaddouri_Morel_Razafimandimby)
+ 
+Etudiants en informatique à l'IUT Paul Sabatier de Toulouse
