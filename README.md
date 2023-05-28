@@ -4,7 +4,7 @@ Application codée en C permetant de codée et de décoder un message
   
 ## Sommaire
 
-* [Objectif](#Obj)
+* [Objexwxctif](#Obj)
 * [Démarrage](#Démarrage)
 * [Documentation](#Documentation)
   * [Chiffrage](#Chiff)
